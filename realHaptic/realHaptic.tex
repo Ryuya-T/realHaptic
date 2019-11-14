@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:realHaptic/realHaptic.tex
 \documentclass[usejistfm]{ieej}
 \usepackage{url}
 \usepackage{amsmath}
@@ -176,4 +177,184 @@ Ryosuke Hanyu, Toshiaki Tsuji, and Shigeru Abe.
 
 \input{./src/ExperimentFig}
 
+=======
+\documentclass[usejistfm]{ieej}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage[varg]{txfonts}
+\usepackage{bm}
+\usepackage[caption=false]{subfig}
+
+%\usepackage[top=0.5in]{geometry}
+%\usepackage{fullpage}
+%\usepackage{auto-pst-pdf}
+%\usepackage{epstopdf}
+%\usepackage{float}
+\usepackage{subfloat}
+%\usepackage{caption}
+%\usepackage{axodraw4j}
+%\usepackage{pstricks}
+
+
+\jtitle{半導体歪ゲージを用いたハイダイナミックレンジ一軸力覚センサの開発}
+%\etitle{Development of a compact high dynamic range 6-axis force/torque sensor}
+\authorlist{
+ \authorentry{19MM227\ \ \ 田村 龍也}{Ryuya Tamura}{s}{TRL}
+ }
+%\affiliate[] {埼玉大学工学部電気電子システム工学科\\
+ %〒338--8570\ 埼玉県さいたま市下大久保255}
+  %{Saitama\ University \\
+  %255, Shimo-ohkubo, Sakura-ku\ Saitama\ 338--8570}
+\begin{document}
+\begin{abstract}
+
+%\input{./src/Abstract}
+
+\end{abstract}
+%\begin{jkeyword}
+ %力覚センサ，ダイナミックレンジ, 小型化, 分解能
+%\end{jkeyword}
+%\begin{ekeyword}
+ %Force/Torque sensor, Dynamic range, Miniaturization, Resolution
+%\end{ekeyword}
+\maketitle
+
+
+\input{./src/introduction}
+
+\input{./src/principle}
+
+\input{./src/design}
+
+\input{./src/Experiment}
+
+\input{./src/Summary} 
+
+\input{./src/Acknowledgements}
+
+
+\begin{thebibliography}{10}
+%\bibliographystyle{plain}    %参考文献出力スタイル(欧文)
+%\bibliographystyle{junsrt}    %参考文献出力スタイル(和文)
+\bibitem{denso}
+力センサ有コンプライアンス機能.
+\url{https://www.denso-wave.com/ja/robot/product/function/Acontact.html}
+[Online; accessed 2019-02-14] 
+
+\bibitem{asimo}
+{Honda|ASIMO}.
+\url{https://www.honda.co.jp/ASIMO/}.
+[Online; accessed 2019-02-14] 
+
+\bibitem{ROBEAR}
+{介護支援ロボット研究用プラットフォームROBEAR}.
+\url{http://rtc.nagoya.riken.jp/ROBEAR/}.
+[Online; accessed 2019-02-14] 
+
+\bibitem{yoshikawa1989six}
+Tsuneo Yoshikawa and Taizou Miyazaki.
+\newblock {A six-axis force sensor with three-dimensional cross-shape
+  structure}.
+\newblock In {\em Proc. IEEE Int. Conf. Robot. Autom.}, pp. 249--255. IEEE,
+  1989.
+
+%\bibitem{nishiwaki2002six}
+%Koichi Nishiwaki, Yoshifumi Murakami, Satoshi Kagami, Yasuo Kuniyoshi, Masayuki
+ % Inaba, and Hirochika Inoue.
+%\newblock {A six-axis force sensor with parallel support mechanism to measure
+%  the ground reaction force of humanoid robot}.
+%\newblock In {\em Proc. IEEE Int. Conf. Robot. Autom.}, Vol.~3, pp. 2277--2282,
+%  2002.
+
+%\bibitem{Liang2010}
+% Qiaokang Liang, Dan Zhang, Quanjun Song, Yunjian Ge, Huibin Cao, and Yu~Ge.
+% \newblock {Design and fabrication of a six-dimensional wrist force / torque
+%   sensor based on E-type membranes compared to cross beams}.
+% \newblock {\em Measurement}, Vol.~43, pp. 1702--1719, 2010.
+
+\bibitem{Beyeler2009}
+Felix Beyeler, Simon Muntwyler, and Bradley~J. Nelson.
+\newblock {A six-axis MEMS force-torque sensor with micro-Newton and
+  nano-Newtonmeter resolution}.
+\newblock {\em J. Microelectromechanical Syst.}, Vol.~18, No.~2, pp. 433--441,
+  2009.
+
+\bibitem{Kim2013a}
+Ji~Chul Kim, Kyung~Soo Kim, and Soohyun Kim.
+\newblock {Note: A compact three-axis optical force/torque sensor using
+  photo-interrupters}.
+\newblock {\em Rev. Sci. Instrum.}, Vol.~84, No.~12, pp. 77--80, 2013.
+
+%\bibitem{su20093}
+%Hao Su and Gregory~S Fischer.
+%\newblock {A 3-axis optical force/torque sensor for prostate needle placement
+%  in magnetic resonance imaging environments}.
+%\newblock In {\em Proc. IEEE Int. Conf. Technol. Pract. Robot Appl.}, pp. 5--9.
+%  IEEE, 2009.
+
+%\bibitem{polygerinos2010novel}
+%Panagiotis Polygerinos, Pinyo Puangmali, Tobias Schaeffter, Reza Razavi,
+%  Lakmal~D Seneviratne, and Kaspar Althoefer.
+%\newblock {Novel miniature MRI-compatible fiber-optic force sensor for cardiac
+%  catheterization procedures}.
+%\newblock In {\em Proc. IEEE Int. Conf. Robot. Autom.}, pp. 2598--2603. IEEE,
+%  2010.
+
+\bibitem{Jiang2015}
+Jun Jiang, Weihai Chen, Jingmeng Liu, Wenjie Chen, and Jianbin Zhang.
+\newblock {Design of a Dual-Range Force Sensor for Achieving High Sensitivity,
+  Broad Bandwidth, and Large Measurement Range}.
+\newblock {\em IEEE Sens. J.}, Vol.~15, No.~2, pp. 1114--1123, 2015.
+
+\bibitem{jiang2013}
+Jun Jiang, Weihai Chen, Jingmeng Liu, and Wenjie Chen.
+\newblock {A cost effective multi-axis force sensor for large scale measurement
+  : design , modeling , and simulation}.
+\newblock pp. 188--193, 2013.
+
+\bibitem{murozaki2014miniaturized}
+Yuichi Murozaki, Kousuke Nogawa, and Fumihito Arai.
+\newblock {Miniaturized load sensor using quartz crystal resonator constructed
+  through microfabrication and bonding}.
+\newblock {\em Robomech J.}, Vol.~1, No.~1, p.~3, 2014.
+
+\bibitem{okumura2018high}
+Daisuke Okumura, Sho Sakaino, and Toshiaki Tsuji.
+\newblock {High Dynamic Range Sensing by a Multistage Six-Axis Force Sensor
+  with Stopper Mechanism}.
+\newblock In {\em Proc. IEEE Int. Conf. Robot. Autom.}, pp. 1--6. IEEE, 2018.
+
+\bibitem{Okumura}
+辻俊明, 奥村大輔, 境野翔.
+\newblock 多段型ハイダイナミックレンジ6軸力覚センサの小型化.
+\newblock  日本ロボット学会学術講演会, 2018.
+
+\bibitem{1991}
+緒方浩二郎, 柏木邦雄, 小野耕三.
+\newblock 力覚センサ, 1991.
+
+\bibitem{hanyu2010simplified}
+Ryosuke Hanyu, Toshiaki Tsuji, and Shigeru Abe.
+\newblock {A simplified whole-body haptic sensing system with multiple
+  supporting points}.
+\newblock In {\em Proc. IEEE Int. Work. Adv. Motion Control}, pp. 691--696.
+  IEEE, 2010.
+
+\bibitem{向井優2018}
+向井優, 野田善之.
+\newblock 六軸力覚センサの原理と構造.
+\newblock 精密工学会誌, Vol.~84, No.~4, pp. 303--306, 2018.
+
+
+%\bibliography{C:/Users/Kohei/Documents/library}           %data.bibから拡張子を外した名前
+
+%\appendix
+  %\input{./src/Refernces}
+\end{thebibliography}
+
+\input{./src/ExperimentFig}
+
+>>>>>>> Stashed changes:realHaptic/IECON.tex
 \end{document}
