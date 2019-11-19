@@ -1,53 +1,66 @@
 \section{力覚センサの原理}
-6軸力覚センサとはデカルト座標系における$x, y, z$軸方向の力($Fx, Fy, Fz$)と力のモーメント($Mx, My, Mz$)の大きさを
-測定するセンサである. 本研究では一般的に広く利用されているひずみゲージ式を採用した. 
+\subsection{歪ゲージ}
+材料に引張力（または圧縮力）が加わる時, これに対応する応力が材料内部に発生する.
+ここでこの応力に比例した引張歪（または圧縮歪）が発生し, 長さLの材料は　　に変形する.
+この時の　と　の割合を歪と呼ぶ. 
 
-力覚センサは起歪体に生じるひずみの変化量を力情報へと変換する. 
-力覚センサに印加される荷重\textbf{\textit{L}}($F$[N], $M$[Nm])と
-ひずみ出力\textbf{\textit{S}}[$\mu$m/m]は次のように表せる. 
-\begin{eqnarray}
-  \bm{L} = {[F_x, F_y, F_z, M_x, M_y, M_z]}^{\top} \\
-  \bm{S} = {[ S_1, S_2, S_3, S_4, S_5, S_6 ]}^{\top}
-\end{eqnarray}
-荷重$\bm{L}$とひずみ出力$\bm{S}$は荷重-ひずみ行列$\bm{C}$によって次のように関係付けられる. 
-\begin{eqnarray}
-  \bm{S} = \bm{C}\bm{L}
-\end{eqnarray}
-また, 荷重-ひずみ行列$\bm{C}$の逆行列を用いると
-\begin{eqnarray}
-  \bm{L} = \bm{C}^{-1}\bm{S}
-  \label{eq:syuturyoku}
-\end{eqnarray}
-となる. よってひずみ出力$\bm{S}$を元に印加された荷重$\bm{L}$の計測が可能となる. 
+歪ゲージはこの歪を電気信号として検出することのできるセンシング素子のことである. 
 
-次に較正行列の求め方\cite{hanyu2010simplified}を述べる. ここで, すでに印加荷重$\bm{L}$と
-そのときのひずみ$\bm{S}$の値が既知であり, そのサンプル数は$n$であるとする.
-つまり, $\bm{L} = [\bm{L}^1, \bm{L}^2, \cdots , \bm{L}^n]$, $\bm{S} = [\bm{S}^1, \bm{S}^2, \cdots , \bm{S}^n]$
-が既に与えられているとする。ここで、$\bm{L}^k = [F^k_x, F^k_y, F^k_z, M^k_x, M^k_y, M^k_z]^{\top}$, $\bm{S}^k = [S^k_1, S^k_2, \cdots, S^k_i]^{\top} $
-とすると
-\begin{eqnarray}
-  \bm{C}^{-1} = \bm{L} \bm{S}^{-1} \label{eq:c}
-\end{eqnarray}
-によって$\bm{C}^{-1}$を求めることが可能である. 
-以下、簡単のため$\bm{L}$の$F_x$のみを考える。較正行列$\bm{C}$の逆行列$\bm{C}^{-1}$を
-\begin{eqnarray}
-\bm{C}^{-1} = \left[
-   \begin{array}{cccc}
-     a_{11} & a_{12} & \ldots & a_{16} \\
-     a_{21} & a_{22} & \ldots & a_{26} \\
-     \vdots & \vdots & \ddots & \vdots \\
-     a_{61} & a_{62} & \ldots & a_{66}
-   \end{array}
- \right]
-\end{eqnarray}
-とすると、$k$サンプル目の$F^k_x$の予測値$F^{k\ast}_x$は
-\begin{eqnarray}
-   F^{k\ast}_x = a^k_{11} S^k_1 + a^k_{12} S^k_2 + \cdots + a^k_{16} S^k_6
-\end{eqnarray}
-と表される。
-式\eqref{eq:c}は実際の印加荷重と予測値の残差二乗和
-\begin{eqnarray}
-  \sum_{k=0}^{n} d^2_k = \sum_{k=0}^{n} {\left(F^k_x - F^{k\ast}_x \right)}^2
-\end{eqnarray}
-が最小となるような定数$[a_{11}, a_{12}, \ldots, a_{16}]$を最小二乗法で導出するのと等価である. 
+
+\subsection{金属箔歪ゲージ}*
+\subsection{半導体歪ゲージ}*
+
+\subsection{起歪体}
+
+%6軸力覚センサとはデカルト座標系における$x, y, z$軸方向の力($Fx, Fy, Fz$)と力のモーメント($Mx, My, Mz$)の大きさを
+%測定するセンサである. 本研究では一般的に広く利用されているひずみゲージ式を採用した. 
+
+%力覚センサは起歪体に生じるひずみの変化量を力情報へと変換する. 
+%力覚センサに印加される荷重\textbf{\textit{L}}($F$[N], $M$[Nm])と
+%ひずみ出力\textbf{\textit{S}}[$\mu$m/m]は次のように表せる. 
+%\begin{eqnarray}
+%  \bm{L} = {[F_x, F_y, F_z, M_x, M_y, M_z]}^{\top} \\
+%  \bm{S} = {[ S_1, S_2, S_3, S_4, S_5, S_6 ]}^{\top}
+%\end{eqnarray}
+%荷重$\bm{L}$とひずみ出力$\bm{S}$は荷重-ひずみ行列$\bm{C}$によって次のように関係付けられる. 
+%\begin{eqnarray}
+%  \bm{S} = \bm{C}\bm{L}
+%\end{eqnarray}
+%また, 荷重-ひずみ行列$\bm{C}$の逆行列を用いると
+%\begin{eqnarray}
+%  \bm{L} = \bm{C}^{-1}\bm{S}
+%  \label{eq:syuturyoku}
+%\end{eqnarray}
+%となる. よってひずみ出力$\bm{S}$を元に印加された荷重$\bm{L}$の計測が可能となる. 
+
+%次に較正行列の求め方\cite{hanyu2010simplified}を述べる. ここで, すでに印加荷重$\bm{L}$と
+%そのときのひずみ$\bm{S}$の値が既知であり, そのサンプル数は$n$であるとする.
+%つまり, $\bm{L} = [\bm{L}^1, \bm{L}^2, \cdots , \bm{L}^n]$, $\bm{S} = [\bm{S}^1, \bm{S}^2, \cdots , \bm{S}^n]$
+%が既に与えられているとする。ここで、$\bm{L}^k = [F^k_x, F^k_y, F^k_z, M^k_x, M^k_y, M^k_z]^{\top}$, $\bm{S}^k = [S^k_1, S^k_2, \cdots, S^k_i]^{\top} $
+%とすると
+%\begin{eqnarray}
+%  \bm{C}^{-1} = \bm{L} \bm{S}^{-1} \label{eq:c}
+%\end{eqnarray}
+%によって$\bm{C}^{-1}$を求めることが可能である. 
+%以下、簡単のため$\bm{L}$の$F_x$のみを考える。較正行列$\bm{C}$の逆行列$\bm{C}^{-1}$を
+%\begin{eqnarray}
+%\bm{C}^{-1} = \left[
+%   \begin{array}{cccc}
+%     a_{11} & a_{12} & \ldots & a_{16} \\
+%     a_{21} & a_{22} & \ldots & a_{26} \\
+%     \vdots & \vdots & \ddots & \vdots \\
+%     a_{61} & a_{62} & \ldots & a_{66}
+%   \end{array}
+% \right]
+%\end{eqnarray}
+%とすると、$k$サンプル目の$F^k_x$の予測値$F^{k\ast}_x$は
+%\begin{eqnarray}
+%   F^{k\ast}_x = a^k_{11} S^k_1 + a^k_{12} S^k_2 + \cdots + a^k_{16} S^k_6
+%\end{eqnarray}
+%と表される。
+%式\eqref{eq:c}は実際の印加荷重と予測値の残差二乗和
+%\begin{eqnarray}
+%  \sum_{k=0}^{n} d^2_k = \sum_{k=0}^{n} {\left(F^k_x - F^{k\ast}_x \right)}^2
+%\end{eqnarray}
+%が最小となるような定数$[a_{11}, a_{12}, \ldots, a_{16}]$を最小二乗法で導出するのと等価である. 
 %ことで、$\bm{C}^{-1}$の$F_x$に寄与する部分を求めることができる。他の軸も同様に求めることができ、合わせることで較正行列$\bm{C}$の逆行列$\bm{C}^{-1}$を求めることができる。
