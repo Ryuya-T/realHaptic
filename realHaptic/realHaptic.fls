@@ -168,7 +168,7 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txbss.tfm
 INPUT ./src/principle.tex
 INPUT ./src/principle.tex
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txbi.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txbss.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txmi1.tfm
@@ -201,33 +201,12 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
 OUTPUT realHaptic.dvi
 INPUT ./src/design.tex
 INPUT ./src/design.tex
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txbss.tfm
 INPUT pic/sensor.png
 INPUT extractbb -B cropbox -O pic/sensor.png
-INPUT pic/LowCAD.PNG
-INPUT extractbb -B cropbox -O pic/LowCAD.png
-INPUT pic/HighCAD.PNG
-INPUT extractbb -B cropbox -O pic/HighCAD.png
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth8.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT c:/texlive/2018/texmf-dist/tex/latex/txfonts/omstxr.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT pic/Low_sim.png
 INPUT extractbb -B cropbox -O pic/Low_sim.png
-INPUT pic/High_sim.png
-INPUT extractbb -B cropbox -O pic/High_sim.png
-INPUT pic/Vertical.PNG
-INPUT extractbb -B cropbox -O pic/Vertical.png
-INPUT pic/Horizontal.PNG
-INPUT extractbb -B cropbox -O pic/Horizontal.png
 INPUT pic/LowGage.PNG
 INPUT extractbb -B cropbox -O pic/LowGage.png
-INPUT pic/HighGage.PNG
-INPUT extractbb -B cropbox -O pic/HighGage.png
 INPUT ./src/Experiment.tex
 INPUT ./src/Experiment.tex
 INPUT pic/real_L.jpg
@@ -236,6 +215,12 @@ INPUT pic/real_H.jpg
 INPUT extractbb -B cropbox -O pic/real_H.jpg
 INPUT ./src/Summary.tex
 INPUT ./src/Summary.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth8.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT ./src/Acknowledgements.tex
 INPUT ./src/Acknowledgements.tex
 INPUT c:/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
@@ -246,34 +231,4 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT ./src/ExperimentFig.tex
-INPUT ./src/ExperimentFig.tex
-INPUT pic/Fx_L.png
-INPUT extractbb -B cropbox -O pic/Fx_L.png
-INPUT pic/Fy_L.png
-INPUT extractbb -B cropbox -O pic/Fy_L.png
-INPUT pic/Fz_L.png
-INPUT extractbb -B cropbox -O pic/Fz_L.png
-INPUT pic/Mx_L.png
-INPUT extractbb -B cropbox -O pic/Mx_L.png
-INPUT pic/My_L.png
-INPUT extractbb -B cropbox -O pic/My_L.png
-INPUT pic/Mz_L.png
-INPUT extractbb -B cropbox -O pic/Mz_L.png
-INPUT pic/Fx_H.png
-INPUT extractbb -B cropbox -O pic/Fx_H.png
-INPUT pic/Fy_H.png
-INPUT extractbb -B cropbox -O pic/Fy_H.png
-INPUT pic/Fz_H.png
-INPUT extractbb -B cropbox -O pic/Fz_H.png
-INPUT pic/Mx_H.png
-INPUT extractbb -B cropbox -O pic/Mx_H.png
-INPUT pic/My_H.png
-INPUT extractbb -B cropbox -O pic/My_H.png
-INPUT pic/Mz_H.png
-INPUT extractbb -B cropbox -O pic/Mz_H.png
-INPUT pic/SN.png
-INPUT extractbb -B cropbox -O pic/SN.png
-INPUT pic/SNT.png
-INPUT extractbb -B cropbox -O pic/SNT.png
 INPUT realHaptic.aux

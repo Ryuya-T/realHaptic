@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2019.4.3)  14 NOV 2019 11:29
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2019.4.3)  20 NOV 2019 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -367,79 +367,33 @@ LaTeX Font Info:    Font shape `OT1/txss/bx/n' in size <9.96017> not available
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
 (Font)              scaled to size 9.46213pt on input line 1.
 ) (./src/principle.tex
-LaTeX Font Info:    Font shape `JT1/mc/bx/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `OT1/txss/bx/n' in size <10> not available
+(Font)              Font shape `OT1/txss/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 13.
+LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    External font `jisg at9.6104pt' loaded for size
-(Font)              <10> on input line 6.
+(Font)              <10> on input line 13.
 LaTeX Font Info:    External font `jis at5.9141pt' loaded for size
-(Font)              <6> on input line 11.
+(Font)              <6> on input line 21.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 11.
+(Font)              scaled to size 8.54997pt on input line 21.
  [1
 
 
 ]) (./src/design.tex
-LaTeX Font Info:    Font shape `OT1/txss/bx/n' in size <10> not available
-(Font)              Font shape `OT1/txss/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 6.
-LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
-LaTeX Font Info:    External font `jisg at9.6104pt' loaded for size
-(Font)              <10> on input line 6.
 File: pic/sensor.png Graphic file (type bmp)
 <pic/sensor.png>
-File: pic/LowCAD.png Graphic file (type bmp)
-<pic/LowCAD.png>
-File: pic/HighCAD.png Graphic file (type bmp)
-<pic/HighCAD.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `tb:size' on page 2 undefined on input line 59.
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-LaTeX Font Info:    External font `jis at8.1318pt' loaded for size
-(Font)              <8> on input line 86.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 86.
-LaTeX Font Info:    External font `jisg at8.1318pt' loaded for size
-(Font)              <8> on input line 86.
-[2]
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 125.
- (c:/texlive/2018/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 125.
 File: pic/Low_sim.png Graphic file (type bmp)
 <pic/Low_sim.png>
-File: pic/High_sim.png Graphic file (type bmp)
-<pic/High_sim.png>
-File: pic/Vertical.png Graphic file (type bmp)
-<pic/Vertical.png>
-File: pic/Horizontal.png Graphic file (type bmp)
-<pic/Horizontal.png>
 File: pic/LowGage.png Graphic file (type bmp)
 <pic/LowGage.png>
-File: pic/HighGage.png Graphic file (type bmp)
-<pic/HighGage.png>
-
-Overfull \hbox (4.26807pt too wide) in paragraph at lines 176--177
- [][][] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[3]) (./src/Experiment.tex
+) (./src/Experiment.tex
 File: pic/real_L.jpg Graphic file (type bmp)
 <pic/real_L.jpg>
 File: pic/real_H.jpg Graphic file (type bmp)
@@ -449,16 +403,20 @@ File: pic/real_H.jpg Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.57591pt too wide) in alignment at lines 39--52
- [][][]
- []
+LaTeX Warning: Reference `fig:sn' on page 2 undefined on input line 37.
 
-
+) (./src/Summary.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[4]) (./src/Summary.tex) (./src/Acknowledgements.tex) (I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . )
+LaTeX Font Info:    External font `jis at8.1318pt' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 12.
+LaTeX Font Info:    External font `jisg at8.1318pt' loaded for size
+(Font)              <8> on input line 12.
+[2]) (./src/Acknowledgements.tex) (I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+txtt on input line 63.
  (c:/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -471,53 +429,23 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <7> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 80.
 LaTeX Font Info:    External font `jisg at7.3926pt' loaded for size
 (Font)              <7> on input line 80.
- (./src/ExperimentFig.tex
-File: pic/Fx_L.png Graphic file (type bmp)
-<pic/Fx_L.png>
-File: pic/Fy_L.png Graphic file (type bmp)
-<pic/Fy_L.png>
-File: pic/Fz_L.png Graphic file (type bmp)
-<pic/Fz_L.png>
-File: pic/Mx_L.png Graphic file (type bmp)
-<pic/Mx_L.png>
-File: pic/My_L.png Graphic file (type bmp)
-<pic/My_L.png>
-File: pic/Mz_L.png Graphic file (type bmp)
-<pic/Mz_L.png>
-File: pic/Fx_H.png Graphic file (type bmp)
-<pic/Fx_H.png>
-File: pic/Fy_H.png Graphic file (type bmp)
-<pic/Fy_H.png>
-File: pic/Fz_H.png Graphic file (type bmp)
-<pic/Fz_H.png>
-File: pic/Mx_H.png Graphic file (type bmp)
-<pic/Mx_H.png>
-File: pic/My_H.png Graphic file (type bmp)
-<pic/My_H.png>
-File: pic/Mz_H.png Graphic file (type bmp)
-<pic/Mz_H.png>
-File: pic/SN.png Graphic file (type bmp)
-<pic/SN.png>
-File: pic/SNT.png Graphic file (type bmp)
-<pic/SNT.png>
-)
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[5]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
+[3] (./realHaptic.aux)
 
-[6] (./realHaptic.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3691 strings out of 493226
- 50298 string characters out of 6147197
- 145045 words of memory out of 5000000
- 7562 multiletter control sequences out of 15000+600000
- 47684 words of font info for 155 fonts, out of 8000000 for 9000
+ 3593 strings out of 493226
+ 48759 string characters out of 6147197
+ 126045 words of memory out of 5000000
+ 7490 multiletter control sequences out of 15000+600000
+ 47077 words of font info for 154 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,16n,49p,384b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,49p,385b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on realHaptic.dvi (6 pages, 53160 bytes).
+Output written on realHaptic.dvi (3 pages, 22032 bytes).
