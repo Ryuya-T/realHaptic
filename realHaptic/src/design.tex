@@ -1,17 +1,17 @@
 \section{HDR1軸力覚センサの設計}
 \subsection{起歪体の構造}
-提案する力覚センサの構造をFig.~\ref{fig:sensor}に, 
+提案する力覚センサの構造とひずみゲージ貼り付け位置をFig.~\ref{fig:sensor}に, 
 起歪体の寸法をTable~\ref{tb:size}に示す.
-本研究ではセンシング部分の提案によるHDRの実現を目的としているため, 
+本研究ではセンシング部分の提案によるHDRの原理的検証を目的としているため, 
 起歪体の構造は非常に単純な片持ち梁を採用した. 
 また, 大荷重に耐えられるよう起歪体の材料は剛性の高い超々ジュラルミンを採用した. 
 
-\begin{figure}[b]
-  \begin{center}
-    \includegraphics[width=6.0cm]{pic/hari.jpg}
-    \caption{HDR1軸力覚センサのCADモデル}\label{fig:sensor}
-  \end{center}
-\end{figure}
+%\begin{figure}[b]
+%  \begin{center}
+%    \includegraphics[width=6.0cm]{pic/hari.jpg}
+%    \caption{HDR1軸力覚センサのCADモデル}\label{fig:sensor}
+%  \end{center}
+%\end{figure}
 
 \begin{table}[h]
   \caption{起歪体の寸法 [mm]}\label{tb:size}
@@ -27,9 +27,7 @@
  \end{table}
 
 \subsection{ひずみゲージ貼り付け位置}
-有限要素法シミュレーションによる起歪体のひずみ分布と, 
-ひずみゲージの貼り付け位置をそれぞれFig.~\ref{fig:sim}, 
-Fig.~\ref{fig:hizumi}に示す. 
+有限要素法シミュレーションによる起歪体のひずみ分布をFig.~\ref{fig:sim}に示す.
 
 ひずみゲージは被測定対象のひずみが伝達することにより抵抗変化が生じる
 センシング素子である. 
@@ -54,16 +52,55 @@ Fig.~\ref{fig:hizumi}に示す.
   \end{center}
  \end{table}
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=6.0cm]{pic/simHizumi.jpg}
-    \caption{有限要素法シミュレーションによる結果}\label{fig:sim}
-  \end{center}
+\begin{figure}[b]
+  \centering
+  \begin{tabular}{c}
+    \begin{minipage}{0.5\hsize}
+      \begin{center}
+        \includegraphics[scale=0.2]{pic/hari.jpg}
+        \hspace{1.cm} 
+        \footnotesize{起歪体}
+      \end{center}
+    \end{minipage}
+        \begin{minipage}{0.51\hsize}
+      \begin{center}
+        \includegraphics[scale=0.29]{pic/hizumi.jpg}
+        \hspace{1.6cm} 
+        \footnotesize{ひずみゲージの貼付位置}
+      \end{center}
+    \end{minipage}
+  \end{tabular}
+  \caption[]{HDR1軸力覚センサ}\label{sensor}
 \end{figure}
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=6.5cm]{pic/hizumi.jpg}
-    \caption{ひずみゲージの貼付位置}\label{fig:hizumi}
+    \includegraphics[width=5.5cm]{pic/simHizumi.jpg}
+    \caption{有限要素法シミュレーションによる結果}\label{fig:sim}
   \end{center}
 \end{figure}
+
+\subsection{測定回路系の構成と計測レンジ}
+ひずみを取得するための測定回路を%Fig.~\ref{fig:kairo}
+に示す. 
+ひずみの変化を受けて抵抗値が変位するひずみゲージは, 
+ホイートストンブリッジ回路に接続される. 
+ブリッジ電圧を読み取り, A/D変換された値がカットオフ周波数$fc = 10$HzのLPFを通って
+USB接続されたPCに出力されることで, ひずみの計測が行える. 
+
+ここで, 金属箔ひずみゲージと半導体ひずみゲージの適用レンジ, 
+分解能を%Fig.~\ref{fig:kairo}
+に示す. 
+今回使用したひずみアンプはPCD-400Aで, このひずみアンプの測定レンジは
+最大$20000×10^{-6}$である. Table~\ref{tb:gage}に記したように
+金属箔, 半導体ひずみゲージのひずみ限界はそれぞれ$20000, 3000×10^{-6}$であるが, 
+出力として得られる値は, 起歪体に生じたひずみのゲージ率倍されたものである. 
+よって, 金属箔ひずみゲージでは$10000×10^{-6}$までのひずみを出力として得ることができ, 
+半導体ひずみゲージでは金属箔ひずみげーじでノイズに埋もれてしまう
+低荷重域の値を$110×10^{-6}$まで出力値として得ることができる. 
+このひずみのレンジを印加荷重のレンジに置き換えると%Fig.~\ref{fig:kairo}
+に示したレンジとなり, ゲージ率の異なるひずみゲージを併用することでHDRを
+有した力覚センサを設計することが可能であると見込める. 
+
+
+
